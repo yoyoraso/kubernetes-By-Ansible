@@ -1,0 +1,18 @@
+
+#ad_addr: 10.48.0.0/14
+cidr_v: 10.48.0.0/14
+
+
+packages:
+- docker
+- kubeadm-1.14.10
+- kubectl-1.14.10
+- kubelet-1.14.10
+
+services:
+- docker
+- kubelet
+- firewalld
+
+
+token_file: join_token
